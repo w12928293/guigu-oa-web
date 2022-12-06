@@ -54,11 +54,11 @@
 
 <script>
 import { cellDetail } from '../mock/index';
-import SealAvatar from '../components/Seal.vue';
+// import SealAvatar from '../components/Seal.vue';
 export default {
   name: 'HelloWorld',
   components: {
-    SealAvatar,
+    // SealAvatar,
   },
   props: {
     msg: String
