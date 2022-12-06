@@ -11,7 +11,7 @@
             <h3>朽木白提交的申请</h3>
             <p>北京尚硅谷教育科技公司</p>
             <span class="pass">审批通过</span>
-            <seal-avatar class="seal-wrap"></seal-avatar>
+            <!-- <seal-avatar class="seal-wrap"></seal-avatar> -->
           </div>
         </template>
       </van-cell>
