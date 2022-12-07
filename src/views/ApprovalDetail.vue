@@ -52,6 +52,20 @@
         </template>
       </van-cell>
     </van-list>
+
+    <div class="footer">
+      <div class="left-action">
+        <div class="action back" @click="() => $router.back()">
+          <van-icon name="revoke" />
+          <span>返回</span>
+        </div>
+      </div>
+      <div class="right-button">
+        <van-button type="default" size="small">审批拒绝</van-button>
+        <span style="margin: 0 4px"></span>
+        <van-button type="info" size="small">审批通过</van-button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -110,6 +124,36 @@ export default {
   .seal-wrap {
     position: absolute;
     right: 0;
+  }
+
+  .footer {
+    // height: 50px;
+    padding: 10px;
+    background: #F8F8F8;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    .left-action {
+      flex: 1;
+      .action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          font-size: 12px;
+          color: #838485;
+        }
+      }
+    }
+
+    .right-button {
+      margin-right: 20px;
+    }
   }
 }
 </style>
