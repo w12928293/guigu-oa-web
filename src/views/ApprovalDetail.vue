@@ -53,6 +53,12 @@
       </van-cell>
     </van-list>
 
+    <div class="notice">
+      <van-icon name="bullhorn-o" />
+      <p>朽木白提交的费用申请</p>
+      <span class="pass">审批通过</span>
+    </div>
+
     <div class="footer">
       <div class="left-action">
         <div class="action back" @click="() => $router.back()">
@@ -91,7 +97,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 .container {
-  padding-bottom: 50px;
+  padding-bottom: 86px;
   .header-warp {
     position: relative;
     h3 {
@@ -126,6 +132,25 @@ export default {
     right: 0;
   }
 
+  .notice {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    padding: 8px 10px;
+    background: #FEFBE8;
+    position: fixed;
+    bottom: 53px;
+    z-index: 10;
+    p {
+      flex: 1;
+      margin: 4px;
+    }
+    .pass {
+      color: #07c160;
+      margin-right: 20px;
+    }
+  }
   .footer {
     // height: 50px;
     padding: 10px;
