@@ -7,8 +7,10 @@ import ApprovalDetail from '../views/ApprovalDetail.vue';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/approval', component: Approval },
-  { path: '/detail', component: ApprovalDetail },
+  { path: '/approval', component: Approval, navbar: true },
+  { path: '/approval/:id', component: ApprovalDetail, meta: {
+    hideNav: true
+  } },
 ]
 
 const router = new VueRouter({

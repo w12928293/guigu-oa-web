@@ -21,21 +21,23 @@
       >
         <van-cell v-for="item in list" :key="item.id">
           <template slot="default">
-            <div class="item-wrap">
-              <div class="item-header">
-                <img :src="item.avatar" alt="">
-                <h3>{{item.title}}</h3>
-                <span>{{item.createTime}}</span>
+            <router-link :to="`/approval/${item.id}`">
+              <div class="item-wrap">
+                <div class="item-header">
+                  <img :src="item.avatar" alt="">
+                  <h3>{{item.title}}</h3>
+                  <span>{{item.createTime}}</span>
+                </div>
+                <div class="item-block">
+                  <p>{{item.type}}</p>
+                  <p>开始时间：{{item.startTime}}</p>
+                  <p>结束时间：{{item.endTime}}</p>
+                </div>
+                <div class="item-status">
+                  <span :class="item.status ? 'pass' : 'refused'">{{item.statusText}}</span>
+                </div>
               </div>
-              <div class="item-block">
-                <p>{{item.type}}</p>
-                <p>开始时间：{{item.startTime}}</p>
-                <p>结束时间：{{item.endTime}}</p>
-              </div>
-              <div class="item-status">
-                <span :class="item.status ? 'pass' : 'refused'">{{item.statusText}}</span>
-              </div>
-            </div>
+            </router-link>
           </template>
         </van-cell>
       </van-list>

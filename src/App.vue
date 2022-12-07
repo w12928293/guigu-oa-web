@@ -1,15 +1,12 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <van-tabbar route>
+    <van-tabbar route v-if="!$route.meta.hideNav">
       <van-tabbar-item icon="home-o" to="/" replace>
         首页
       </van-tabbar-item>
       <van-tabbar-item icon="friends-o" to="/approval" replace>
         审批中心
-      </van-tabbar-item>
-      <van-tabbar-item icon="search" to="/detail" replace>
-        详情
       </van-tabbar-item>
     </van-tabbar>
   </div>
@@ -21,7 +18,11 @@ export default {
   data() {
     return {
       active: 0,
+      needNav: true
     };
+  },
+  created() {
+    console.log(this.$route);
   },
 }
 </script>
