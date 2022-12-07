@@ -6,7 +6,6 @@
       left-arrow
       @click-left="() => $router.back()"
     />
-
     <van-list>
       <van-cell>
         <template slot="default">
@@ -14,10 +13,14 @@
             <h3>朽木白提交的申请</h3>
             <p>北京尚硅谷教育科技公司</p>
             <span class="pass">审批通过</span>
-            <!-- <seal-avatar class="seal-wrap"></seal-avatar> -->
+            <div class="seal-wrap">
+              <!-- <seal-avatar></seal-avatar> -->
+              <seal-avatar title="已拒绝" color="#EB8473"></seal-avatar>
+            </div>
           </div>
         </template>
       </van-cell>
+      
       <van-cell>
         <template slot="default">
           <div class="detail-wrap">
@@ -52,7 +55,7 @@
         </template>
       </van-cell>
     </van-list>
-
+    
     <div class="notice">
       <van-icon name="bullhorn-o" />
       <p>朽木白提交的费用申请</p>
@@ -77,11 +80,11 @@
 
 <script>
 import { cellDetail } from '../mock/index';
-// import SealAvatar from '../components/Seal.vue';
+import SealAvatar from '../components/Seal.vue';
 export default {
   name: 'HelloWorld',
   components: {
-    // SealAvatar,
+    SealAvatar,
   },
   props: {
     msg: String
@@ -129,7 +132,8 @@ export default {
   }
   .seal-wrap {
     position: absolute;
-    right: 0;
+    top: 20px;
+    right: 30px;
   }
 
   .notice {
@@ -180,5 +184,15 @@ export default {
       margin-right: 20px;
     }
   }
+}
+
+/deep/ .van-cell {
+  position: inherit;
+  overflow: visible;
+}
+
+/deep/ .van-cell__value{
+  position: inherit;
+  overflow: visible;
 }
 </style>

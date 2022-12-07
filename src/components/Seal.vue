@@ -1,6 +1,6 @@
 <template>
-  <div class="seal">
-    <div class="circle">
+  <div class="seal" :style="{'--color': color}">
+    <div class="circle" :style="{'--color': color}">
       <span class="logo">{{subTitle}}</span>
       <span class="status-text">{{title}}</span>
       <span class="ding">{{desc}}</span>
@@ -56,6 +56,7 @@ export default {
     border-right-color: rgba(0,0,0,0);
     .logo {
       transform: scale(0.5);
+      margin-bottom: -7px;
     }
     .status-text {
       font-size: 20px;
@@ -63,7 +64,7 @@ export default {
       line-height: 24px;
     }
     .ding {
-      margin-top: -6px;
+      margin-top: -10px;
       transform: scale(0.7); 
     }
   }
