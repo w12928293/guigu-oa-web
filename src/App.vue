@@ -3,7 +3,7 @@
     <router-view></router-view>
     <van-tabbar route v-if="!$route.meta.hideNav">
       <van-tabbar-item icon="home-o" to="/" replace>
-        首页
+        首页1
       </van-tabbar-item>
       <van-tabbar-item icon="friends-o" to="/approval" replace>
         审批中心
