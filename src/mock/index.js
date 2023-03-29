@@ -72,7 +72,7 @@ export const cellList = [
   {
     id: 1,
     avatar: 'https://static.dingtalk.com/media/lALOnahFD80CgM0CgA_640_640.png_450x10000q90.jpg',
-    title: "朽木白提交的请假",
+    title: "黑子提交的请假",
     type: '请假类型：事假',
     startTime: '2022-12-06- 16:24',
     endTime: '2022-12-06 21:32',
@@ -83,7 +83,7 @@ export const cellList = [
   {
     id: 2,
     avatar: 'https://static.dingtalk.com/media/lALOnahFD80CgM0CgA_640_640.png_450x10000q90.jpg',
-    title: "朽木白提交的请假",
+    title: "黑子提交的请假",
     type: '请假类型：事假',
     createTime: '2022.10.13',
     startTime: '2022-12-06- 16:24',
