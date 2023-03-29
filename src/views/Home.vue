@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <van-nav-bar
-      title="OA审批"
+      title="OA审批测试！"
     />
     <van-collapse v-model="activeNames">
       <van-collapse-item 
