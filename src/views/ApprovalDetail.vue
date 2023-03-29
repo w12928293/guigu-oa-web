@@ -10,7 +10,7 @@
       <van-cell>
         <template slot="default">
           <div class="header-warp">
-            <h3>朽木白提交的申请</h3>
+            <h3>黑子提交的申请</h3>
             <p>北京尚硅谷教育科技公司</p>
             <span class="pass">审批通过</span>
             <div class="seal-wrap">
@@ -42,11 +42,11 @@
                 <p>2016-07-12 12:40</p>
               </van-step>
               <van-step>
-                <h4>朽木白 已同意</h4>
+                <h4>黑子 已同意</h4>
                 <p>2016-07-11 10:00</p>
               </van-step>
               <van-step>
-                <h4>朽木白 正在处理</h4>
+                <h4>黑子 正在处理</h4>
                 <p>2016-07-10 09:30</p>
               </van-step>
             </van-steps>
@@ -58,7 +58,7 @@
     
     <div class="notice">
       <van-icon name="bullhorn-o" />
-      <p>朽木白提交的费用申请</p>
+      <p>黑子提交的费用申请</p>
       <span class="pass">审批通过</span>
     </div>
 
